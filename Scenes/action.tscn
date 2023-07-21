@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgjfbspfk8thj"]
+
+[ext_resource type="Texture2D" uid="uid://b10fmbm1w4pv1" path="res://Sprites/attack_icon.png" id="1_cybbv"]
+[ext_resource type="Script" path="res://Scripts/action.gd" id="1_m1aj0"]
+
+[node name="Action" type="Node2D"]
+script = ExtResource("1_m1aj0")
+
+[node name="Button" type="Button" parent="."]
+z_as_relative = false
+y_sort_enabled = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("1_cybbv")
+flat = true
+icon_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

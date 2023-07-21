@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://3ap8uds0gdu3"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_7bnoc"]
+[ext_resource type="Script" path="res://Scripts/camera.gd" id="2_s42gw"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_7bnoc")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(320, 180)
+position_smoothing_enabled = true
+position_smoothing_speed = 13.0
+rotation_smoothing_enabled = true
+script = ExtResource("2_s42gw")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
